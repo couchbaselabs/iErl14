@@ -1750,7 +1750,7 @@
 				INSTALL_PATH = /usr/local/lib;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/../../openssl-0.9.8o/build/Debug\"",
+					"\"$(SRCROOT)/src\"",
 				);
 				PRODUCT_NAME = iErl14;
 			};
@@ -1768,7 +1768,7 @@
 				INSTALL_PATH = /usr/local/lib;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/../../openssl-0.9.8o/build/Debug\"",
+					"\"$(SRCROOT)/src\"",
 				);
 				PRODUCT_NAME = iErl14;
 			};
