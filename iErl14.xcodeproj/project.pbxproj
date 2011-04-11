@@ -358,8 +358,8 @@
 		03E838FD135394B000D64D0D /* vm.c in Sources */ = {isa = PBXBuildFile; fileRef = D93F40621256660000AF842F /* vm.c */; };
 		03E838FF135394B000D64D0D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
 		03E83900135394B000D64D0D /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D9E24C5B124031A700AC152E /* libicucore.dylib */; };
-		03E8390A1353952500D64D0D /* libcrypto-device.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 03E839081353952500D64D0D /* libcrypto-device.a */; };
-		03E8390C1353952C00D64D0D /* libcrypto-simulator.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 03E839091353952500D64D0D /* libcrypto-simulator.a */; };
+		03E8390A1353952500D64D0D /* libcrypto-iphoneos.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 03E839081353952500D64D0D /* libcrypto-iphoneos.a */; };
+		03E8390C1353952C00D64D0D /* libcrypto-iphonesimulator.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 03E839091353952500D64D0D /* libcrypto-iphonesimulator.a */; };
 		AA747D9F0F9514B9006C5449 /* iErl14_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = AA747D9E0F9514B9006C5449 /* iErl14_Prefix.pch */; };
 		AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
 		D93F40641256660000AF842F /* alias.h in Headers */ = {isa = PBXBuildFile; fileRef = D93F405A1256660000AF842F /* alias.h */; };
@@ -714,12 +714,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		03E83905135394B000D64D0D /* libiErl14-simulator.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libiErl14-simulator.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		03E839081353952500D64D0D /* libcrypto-device.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libcrypto-device.a"; path = "lib/libcrypto-device.a"; sourceTree = "<group>"; };
-		03E839091353952500D64D0D /* libcrypto-simulator.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libcrypto-simulator.a"; path = "lib/libcrypto-simulator.a"; sourceTree = "<group>"; };
+		03E83905135394B000D64D0D /* libiErl14-iphonesimulator.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libiErl14-iphonesimulator.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		03E839081353952500D64D0D /* libcrypto-iphoneos.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libcrypto-iphoneos.a"; path = "lib/libcrypto-iphoneos.a"; sourceTree = "<group>"; };
+		03E839091353952500D64D0D /* libcrypto-iphonesimulator.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libcrypto-iphonesimulator.a"; path = "lib/libcrypto-iphonesimulator.a"; sourceTree = "<group>"; };
 		AA747D9E0F9514B9006C5449 /* iErl14_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iErl14_Prefix.pch; sourceTree = SOURCE_ROOT; };
 		AACBBE490F95108600F1A2B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		D2AAC07E0554694100DB518D /* libiErl14-device.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libiErl14-device.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2AAC07E0554694100DB518D /* libiErl14-iphoneos.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libiErl14-iphoneos.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D93F405A1256660000AF842F /* alias.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = alias.h; path = src/alias.h; sourceTree = SOURCE_ROOT; };
 		D93F405B1256660000AF842F /* emonk_main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = emonk_main.c; path = src/emonk_main.c; sourceTree = SOURCE_ROOT; };
 		D93F405C1256660000AF842F /* queue.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = queue.c; path = src/queue.c; sourceTree = SOURCE_ROOT; };
@@ -1078,7 +1078,7 @@
 			files = (
 				03E838FF135394B000D64D0D /* Foundation.framework in Frameworks */,
 				03E83900135394B000D64D0D /* libicucore.dylib in Frameworks */,
-				03E8390C1353952C00D64D0D /* libcrypto-simulator.a in Frameworks */,
+				03E8390C1353952C00D64D0D /* libcrypto-iphonesimulator.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1088,7 +1088,7 @@
 			files = (
 				AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */,
 				D9E24C5C124031A700AC152E /* libicucore.dylib in Frameworks */,
-				03E8390A1353952500D64D0D /* libcrypto-device.a in Frameworks */,
+				03E8390A1353952500D64D0D /* libcrypto-iphoneos.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1098,8 +1098,8 @@
 		034768DFFF38A50411DB9C8B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D2AAC07E0554694100DB518D /* libiErl14-device.a */,
-				03E83905135394B000D64D0D /* libiErl14-simulator.a */,
+				D2AAC07E0554694100DB518D /* libiErl14-iphoneos.a */,
+				03E83905135394B000D64D0D /* libiErl14-iphonesimulator.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1107,8 +1107,8 @@
 		03E83907135394F300D64D0D /* ios-openssl */ = {
 			isa = PBXGroup;
 			children = (
-				03E839081353952500D64D0D /* libcrypto-device.a */,
-				03E839091353952500D64D0D /* libcrypto-simulator.a */,
+				03E839081353952500D64D0D /* libcrypto-iphoneos.a */,
+				03E839091353952500D64D0D /* libcrypto-iphonesimulator.a */,
 			);
 			name = "ios-openssl";
 			path = "../ios-openssl";
@@ -2110,9 +2110,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		03E8379E135394B000D64D0D /* iErl14-simulator */ = {
+		03E8379E135394B000D64D0D /* iErl14-iphonesimulator */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 03E83902135394B000D64D0D /* Build configuration list for PBXNativeTarget "iErl14-simulator" */;
+			buildConfigurationList = 03E83902135394B000D64D0D /* Build configuration list for PBXNativeTarget "iErl14-iphonesimulator" */;
 			buildPhases = (
 				03E8379F135394B000D64D0D /* Headers */,
 				03E83866135394B000D64D0D /* Sources */,
@@ -2122,14 +2122,14 @@
 			);
 			dependencies = (
 			);
-			name = "iErl14-simulator";
+			name = "iErl14-iphonesimulator";
 			productName = iErl14;
-			productReference = 03E83905135394B000D64D0D /* libiErl14-simulator.a */;
+			productReference = 03E83905135394B000D64D0D /* libiErl14-iphonesimulator.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		D2AAC07D0554694100DB518D /* iErl14-device */ = {
+		D2AAC07D0554694100DB518D /* iErl14-iphoneos */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1DEB921E08733DC00010E9CD /* Build configuration list for PBXNativeTarget "iErl14-device" */;
+			buildConfigurationList = 1DEB921E08733DC00010E9CD /* Build configuration list for PBXNativeTarget "iErl14-iphoneos" */;
 			buildPhases = (
 				D2AAC07A0554694100DB518D /* Headers */,
 				D2AAC07B0554694100DB518D /* Sources */,
@@ -2139,9 +2139,9 @@
 			);
 			dependencies = (
 			);
-			name = "iErl14-device";
+			name = "iErl14-iphoneos";
 			productName = iErl14;
-			productReference = D2AAC07E0554694100DB518D /* libiErl14-device.a */;
+			productReference = D2AAC07E0554694100DB518D /* libiErl14-iphoneos.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -2164,8 +2164,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D2AAC07D0554694100DB518D /* iErl14-device */,
-				03E8379E135394B000D64D0D /* iErl14-simulator */,
+				D2AAC07D0554694100DB518D /* iErl14-iphoneos */,
+				03E8379E135394B000D64D0D /* iErl14-iphonesimulator */,
 			);
 		};
 /* End PBXProject section */
@@ -2506,10 +2506,10 @@
 				INSTALL_PATH = /usr/local/lib;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\\\"$(SRCROOT)/src\\\"",
+					"\"$(SRCROOT)/src\"",
 					"\"$(SRCROOT)/../ios-openssl/lib\"",
 				);
-				PRODUCT_NAME = "iErl14-simulator";
+				PRODUCT_NAME = "iErl14-iphonesimulator";
 			};
 			name = Debug;
 		};
@@ -2527,10 +2527,10 @@
 				INSTALL_PATH = /usr/local/lib;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\\\"$(SRCROOT)/src\\\"",
+					"\"$(SRCROOT)/src\"",
 					"\"$(SRCROOT)/../ios-openssl/lib\"",
 				);
-				PRODUCT_NAME = "iErl14-simulator";
+				PRODUCT_NAME = "iErl14-iphonesimulator";
 			};
 			name = Release;
 		};
@@ -2553,7 +2553,7 @@
 					"\"$(SRCROOT)/src\"",
 					"\"$(SRCROOT)/../ios-openssl/lib\"",
 				);
-				PRODUCT_NAME = "iErl14-device";
+				PRODUCT_NAME = "iErl14-iphoneos";
 			};
 			name = Debug;
 		};
@@ -2574,7 +2574,7 @@
 					"\"$(SRCROOT)/src\"",
 					"\"$(SRCROOT)/../ios-openssl/lib\"",
 				);
-				PRODUCT_NAME = "iErl14-device";
+				PRODUCT_NAME = "iErl14-iphoneos";
 			};
 			name = Release;
 		};
@@ -2633,7 +2633,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		03E83902135394B000D64D0D /* Build configuration list for PBXNativeTarget "iErl14-simulator" */ = {
+		03E83902135394B000D64D0D /* Build configuration list for PBXNativeTarget "iErl14-iphonesimulator" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				03E83903135394B000D64D0D /* Debug */,
@@ -2642,7 +2642,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1DEB921E08733DC00010E9CD /* Build configuration list for PBXNativeTarget "iErl14-device" */ = {
+		1DEB921E08733DC00010E9CD /* Build configuration list for PBXNativeTarget "iErl14-iphoneos" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1DEB921F08733DC00010E9CD /* Debug */,
