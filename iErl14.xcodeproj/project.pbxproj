@@ -1095,6 +1095,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0304C9E91355BF0A0056426A /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				03E83907135394F300D64D0D /* ios-openssl */,
+				D9E24C5B124031A700AC152E /* libicucore.dylib */,
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
 		034768DFFF38A50411DB9C8B /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -1102,7 +1111,8 @@
 				03E83905135394B000D64D0D /* libiErl14-iphonesimulator.a */,
 			);
 			name = Products;
-			sourceTree = "<group>";
+			path = ../..;
+			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		03E83907135394F300D64D0D /* ios-openssl */ = {
 			isa = PBXGroup;
@@ -1121,17 +1131,17 @@
 				D9E24C131240288C00AC152E /* Headers */,
 				08FB77AEFE84172EC02AAC07 /* Classes */,
 				32C88DFF0371C24200C91783 /* Other Sources */,
+				0304C9E91355BF0A0056426A /* Libraries */,
 				0867D69AFE84028FC02AAC07 /* Frameworks */,
 				034768DFFF38A50411DB9C8B /* Products */,
 			);
 			name = iErl14;
 			sourceTree = "<group>";
+			usesTabs = 1;
 		};
 		0867D69AFE84028FC02AAC07 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				03E83907135394F300D64D0D /* ios-openssl */,
-				D9E24C5B124031A700AC152E /* libicucore.dylib */,
 				AACBBE490F95108600F1A2B1 /* Foundation.framework */,
 			);
 			name = Frameworks;
@@ -2494,12 +2504,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				ARCHS = i386;
 				COPY_PHASE_STRIP = NO;
 				DSTROOT = /tmp/iErl14.dst;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
-				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = iErl14_Prefix.pch;
@@ -2510,6 +2519,8 @@
 					"\"$(SRCROOT)/../ios-openssl/lib\"",
 				);
 				PRODUCT_NAME = "iErl14-iphonesimulator";
+				SUPPORTED_PLATFORMS = iphonesimulator;
+				VALID_ARCHS = i386;
 			};
 			name = Debug;
 		};
@@ -2517,11 +2528,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				ARCHS = i386;
 				DSTROOT = /tmp/iErl14.dst;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
-				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = iErl14_Prefix.pch;
 				INSTALL_PATH = /usr/local/lib;
@@ -2531,6 +2541,8 @@
 					"\"$(SRCROOT)/../ios-openssl/lib\"",
 				);
 				PRODUCT_NAME = "iErl14-iphonesimulator";
+				SUPPORTED_PLATFORMS = iphonesimulator;
+				VALID_ARCHS = i386;
 			};
 			name = Release;
 		};
@@ -2538,12 +2550,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				ARCHS = (
+					armv6,
+					armv7,
+				);
 				COPY_PHASE_STRIP = NO;
 				DSTROOT = /tmp/iErl14.dst;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
-				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = iErl14_Prefix.pch;
@@ -2554,6 +2568,8 @@
 					"\"$(SRCROOT)/../ios-openssl/lib\"",
 				);
 				PRODUCT_NAME = "iErl14-iphoneos";
+				SUPPORTED_PLATFORMS = iphoneos;
+				VALID_ARCHS = "armv6 armv7";
 			};
 			name = Debug;
 		};
@@ -2561,11 +2577,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				ARCHS = (
+					armv6,
+					armv7,
+				);
 				DSTROOT = /tmp/iErl14.dst;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
-				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = iErl14_Prefix.pch;
 				INSTALL_PATH = /usr/local/lib;
@@ -2575,13 +2593,16 @@
 					"\"$(SRCROOT)/../ios-openssl/lib\"",
 				);
 				PRODUCT_NAME = "iErl14-iphoneos";
+				SUPPORTED_PLATFORMS = iphoneos;
+				VALID_ARCHS = "armv6 armv7";
 			};
 			name = Release;
 		};
 		1DEB922308733DC00010E9CD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = armv6;
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)";
+				CONFIGURATION_TEMP_DIR = "$(PROJECT_TEMP_DIR)/$(CONFIGURATION)";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -2596,7 +2617,6 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = (
 					src,
-					/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk/usr/include,
 					.,
 				);
 				OTHER_LDFLAGS = "-c";
@@ -2608,7 +2628,8 @@
 		1DEB922408733DC00010E9CD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = armv6;
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)";
+				CONFIGURATION_TEMP_DIR = "$(PROJECT_TEMP_DIR)/$(CONFIGURATION)";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"HAVE_CONFIG_H=1",
@@ -2621,7 +2642,6 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = (
 					src,
-					/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk/usr/include,
 					.,
 				);
 				OTHER_LDFLAGS = "-ObjC";
