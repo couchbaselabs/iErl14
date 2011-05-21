@@ -774,7 +774,7 @@ ERTS_GLB_INLINE void erts_heap_frag_shrink(Process* p, Eterm* hp)
 		return;
 	}
 	hf->used_size = hp - hf->mem;
-	printf("erts_heap_frag_shrank\n");
+//	printf("erts_heap_frag_shrank\n");
 }	
 #endif /* inline */
 
