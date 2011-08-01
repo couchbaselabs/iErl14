@@ -117,6 +117,7 @@ int erts_sys_ddll_open2(char *full_name, void **handle, ErtsSysDdllError* err)
 		*handle = (void*) 3;
 		return ERL_DE_NO_ERROR;
 	}
+	err->str = my_strdup_in(ERTS_ALC_T_DDLL_TMP_BUF,"Cannot load DLLs on iOS");
 	return ERL_DE_ERROR_NO_DDLL_FUNCTIONALITY;
 }
 
