@@ -104,34 +104,35 @@ void erl_sys_ddll_init(void) {
  */
 int erts_sys_ddll_open2(char *full_name, void **handle, ErtsSysDdllError* err)
 {
-//iOS hacks whee (I need NIFs... so we're just gonna hack it.
-	*handle = (void*) 1;
-	return ERL_DE_NO_ERROR;
+	printf("Dynamic load attempt: %s\n", full_name);
+	if(strncmp("emonk", full_name, 5) == 0) {
+		*handle = (void*) 1;
+		return ERL_DE_NO_ERROR;
+	}
+	if(strncmp("ejson", full_name, 5) == 0) {
+		*handle = (void*) 2;
+		return ERL_DE_NO_ERROR;
+	}
+	if(strncmp("snappy", full_name, 6) == 0) {
+		*handle = (void*) 3;
+		return ERL_DE_NO_ERROR;
+	}
+	return ERL_DE_ERROR_NO_DDLL_FUNCTIONALITY;
 }
 
 int erts_sys_ddll_open_noext(char *dlname, void **handle, ErtsSysDdllError* err)
 {
-    *handle = (void*) 1;
-	return ERL_DE_NO_ERROR;
+	return erts_sys_ddll_open2(dlname, handle, err);
 }
 
 /* 
  * Find a symbol in the shared object
  */
-ErlNifEntry* nif_init(void); //EMONK
+
 int erts_sys_ddll_sym2(void *handle, char *func_name, void **function,
 		       ErtsSysDdllError* err)
 {
-	//IOS HAX!:
-	if(strncmp("_nif_init", func_name, 9))
-	{
-		printf("WAFL");
-		//only hacking this for emonk atm (ALL NIFS ARE EMONK WHAT?)
-		*function = nif_init; //macro makes it this. we'll deal with namespacing
-							  //when it comes to that.
-		return ERL_DE_NO_ERROR;
-	}
-    //return ERL_DE_ERROR_NO_DDLL_FUNCTIONALITY;
+    return ERL_DE_ERROR_NO_DDLL_FUNCTIONALITY;
 }
 
 /* XXX:PaN These two will be changed with new driver interface! */
@@ -152,18 +153,29 @@ int erts_sys_ddll_load_driver_init(void *handle, void **function)
     }
     return res;
 }
-
+//NIF SUPPORT
+ErlNifEntry* emonk_init(void);
+ErlNifEntry* ejson_init(void);
+ErlNifEntry* snappy_init(void);
 int erts_sys_ddll_load_nif_init(void *handle, void **function, ErtsSysDdllError* err)
 {
-	printf("LOADNIFINIT\n");
-    //void *fn;
-    int res;
-    //if ((res = erts_sys_ddll_sym2(handle, "nif_init", &fn, err)) != ERL_DE_NO_ERROR) {
+	printf("NIF Init #%d, ", (int) handle);
+	int res = ERL_DE_ERROR_NO_DDLL_FUNCTIONALITY;;
+	if((int)handle == 1) {
+		printf("emonk.\n");
+		*function = emonk_init;
 		res = ERL_DE_NO_ERROR;
-    //}
-    if (res == ERL_DE_NO_ERROR) {
-		*function = nif_init; //oh jeez! (emonk/ios)
-    }
+	}
+	if((int)handle == 2) {
+		printf("ejson.\n");
+		*function = ejson_init;
+		res = ERL_DE_NO_ERROR;
+	}
+	if((int)handle == 3) {
+		printf("snappy.\n");
+		*function = snappy_init;
+		res = ERL_DE_NO_ERROR;
+	}
     return res;
 }
 

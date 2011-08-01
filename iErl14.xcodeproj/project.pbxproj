@@ -358,6 +358,35 @@
 		27167DCC13C4E1BF001CC5B6 /* vm.c in Sources */ = {isa = PBXBuildFile; fileRef = D93F40621256660000AF842F /* vm.c */; };
 		27167DCE13C4E1BF001CC5B6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
 		27167DCF13C4E1BF001CC5B6 /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D9E24C5B124031A700AC152E /* libicucore.dylib */; };
+		D912EF2B13DFA1BE00E671FA /* decode.c in Sources */ = {isa = PBXBuildFile; fileRef = D912EF1613DFA1BE00E671FA /* decode.c */; };
+		D912EF2C13DFA1BE00E671FA /* ejson.c in Sources */ = {isa = PBXBuildFile; fileRef = D912EF1713DFA1BE00E671FA /* ejson.c */; };
+		D912EF2D13DFA1BE00E671FA /* encode.c in Sources */ = {isa = PBXBuildFile; fileRef = D912EF1813DFA1BE00E671FA /* encode.c */; };
+		D912EF2E13DFA1BE00E671FA /* erl_nif_compat.h in Headers */ = {isa = PBXBuildFile; fileRef = D912EF1913DFA1BE00E671FA /* erl_nif_compat.h */; };
+		D912EF2F13DFA1BE00E671FA /* yajl.c in Sources */ = {isa = PBXBuildFile; fileRef = D912EF1B13DFA1BE00E671FA /* yajl.c */; };
+		D912EF3013DFA1BE00E671FA /* yajl_alloc.c in Sources */ = {isa = PBXBuildFile; fileRef = D912EF1C13DFA1BE00E671FA /* yajl_alloc.c */; };
+		D912EF3113DFA1BE00E671FA /* yajl_alloc.h in Headers */ = {isa = PBXBuildFile; fileRef = D912EF1D13DFA1BE00E671FA /* yajl_alloc.h */; };
+		D912EF3213DFA1BE00E671FA /* yajl_buf.c in Sources */ = {isa = PBXBuildFile; fileRef = D912EF1E13DFA1BE00E671FA /* yajl_buf.c */; };
+		D912EF3313DFA1BE00E671FA /* yajl_buf.h in Headers */ = {isa = PBXBuildFile; fileRef = D912EF1F13DFA1BE00E671FA /* yajl_buf.h */; };
+		D912EF3413DFA1BE00E671FA /* yajl_bytestack.h in Headers */ = {isa = PBXBuildFile; fileRef = D912EF2013DFA1BE00E671FA /* yajl_bytestack.h */; };
+		D912EF3513DFA1BE00E671FA /* yajl_common.h in Headers */ = {isa = PBXBuildFile; fileRef = D912EF2113DFA1BE00E671FA /* yajl_common.h */; };
+		D912EF3613DFA1BE00E671FA /* yajl_encode.c in Sources */ = {isa = PBXBuildFile; fileRef = D912EF2213DFA1BE00E671FA /* yajl_encode.c */; };
+		D912EF3713DFA1BE00E671FA /* yajl_encode.h in Headers */ = {isa = PBXBuildFile; fileRef = D912EF2313DFA1BE00E671FA /* yajl_encode.h */; };
+		D912EF3813DFA1BE00E671FA /* yajl_gen.c in Sources */ = {isa = PBXBuildFile; fileRef = D912EF2413DFA1BE00E671FA /* yajl_gen.c */; };
+		D912EF3913DFA1BE00E671FA /* yajl_gen.h in Headers */ = {isa = PBXBuildFile; fileRef = D912EF2513DFA1BE00E671FA /* yajl_gen.h */; };
+		D912EF3A13DFA1BE00E671FA /* yajl_lex.c in Sources */ = {isa = PBXBuildFile; fileRef = D912EF2613DFA1BE00E671FA /* yajl_lex.c */; };
+		D912EF3B13DFA1BE00E671FA /* yajl_lex.h in Headers */ = {isa = PBXBuildFile; fileRef = D912EF2713DFA1BE00E671FA /* yajl_lex.h */; };
+		D912EF3C13DFA1BE00E671FA /* yajl_parse.h in Headers */ = {isa = PBXBuildFile; fileRef = D912EF2813DFA1BE00E671FA /* yajl_parse.h */; };
+		D912EF3D13DFA1BE00E671FA /* yajl_parser.c in Sources */ = {isa = PBXBuildFile; fileRef = D912EF2913DFA1BE00E671FA /* yajl_parser.c */; };
+		D912EF3E13DFA1BE00E671FA /* yajl_parser.h in Headers */ = {isa = PBXBuildFile; fileRef = D912EF2A13DFA1BE00E671FA /* yajl_parser.h */; };
+		D9ABA80F13DFB5CC00D072BE /* erl_nif_compat.h in Headers */ = {isa = PBXBuildFile; fileRef = D9ABA80113DFB5CC00D072BE /* erl_nif_compat.h */; };
+		D9ABA81013DFB5CC00D072BE /* snappy-internal.h in Headers */ = {isa = PBXBuildFile; fileRef = D9ABA80613DFB5CC00D072BE /* snappy-internal.h */; };
+		D9ABA81113DFB5CC00D072BE /* snappy-sinksource.cc in Sources */ = {isa = PBXBuildFile; fileRef = D9ABA80713DFB5CC00D072BE /* snappy-sinksource.cc */; };
+		D9ABA81213DFB5CC00D072BE /* snappy-sinksource.h in Headers */ = {isa = PBXBuildFile; fileRef = D9ABA80813DFB5CC00D072BE /* snappy-sinksource.h */; };
+		D9ABA81313DFB5CC00D072BE /* snappy-stubs-internal.cc in Sources */ = {isa = PBXBuildFile; fileRef = D9ABA80913DFB5CC00D072BE /* snappy-stubs-internal.cc */; };
+		D9ABA81413DFB5CC00D072BE /* snappy-stubs-internal.h in Headers */ = {isa = PBXBuildFile; fileRef = D9ABA80A13DFB5CC00D072BE /* snappy-stubs-internal.h */; };
+		D9ABA81513DFB5CC00D072BE /* snappy.cc in Sources */ = {isa = PBXBuildFile; fileRef = D9ABA80C13DFB5CC00D072BE /* snappy.cc */; };
+		D9ABA81613DFB5CC00D072BE /* snappy.h in Headers */ = {isa = PBXBuildFile; fileRef = D9ABA80D13DFB5CC00D072BE /* snappy.h */; };
+		D9ABA81713DFB5CC00D072BE /* snappy_nif.cc in Sources */ = {isa = PBXBuildFile; fileRef = D9ABA80E13DFB5CC00D072BE /* snappy_nif.cc */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -366,6 +395,26 @@
 		27167DD413C4E1BF001CC5B6 /* libiErl14.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libiErl14.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA747D9E0F9514B9006C5449 /* iErl14_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iErl14_Prefix.pch; sourceTree = SOURCE_ROOT; };
 		AACBBE490F95108600F1A2B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D912EF1613DFA1BE00E671FA /* decode.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = decode.c; sourceTree = "<group>"; };
+		D912EF1713DFA1BE00E671FA /* ejson.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ejson.c; sourceTree = "<group>"; };
+		D912EF1813DFA1BE00E671FA /* encode.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = encode.c; sourceTree = "<group>"; };
+		D912EF1913DFA1BE00E671FA /* erl_nif_compat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = erl_nif_compat.h; sourceTree = "<group>"; };
+		D912EF1B13DFA1BE00E671FA /* yajl.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = yajl.c; sourceTree = "<group>"; };
+		D912EF1C13DFA1BE00E671FA /* yajl_alloc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = yajl_alloc.c; sourceTree = "<group>"; };
+		D912EF1D13DFA1BE00E671FA /* yajl_alloc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = yajl_alloc.h; sourceTree = "<group>"; };
+		D912EF1E13DFA1BE00E671FA /* yajl_buf.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = yajl_buf.c; sourceTree = "<group>"; };
+		D912EF1F13DFA1BE00E671FA /* yajl_buf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = yajl_buf.h; sourceTree = "<group>"; };
+		D912EF2013DFA1BE00E671FA /* yajl_bytestack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = yajl_bytestack.h; sourceTree = "<group>"; };
+		D912EF2113DFA1BE00E671FA /* yajl_common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = yajl_common.h; sourceTree = "<group>"; };
+		D912EF2213DFA1BE00E671FA /* yajl_encode.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = yajl_encode.c; sourceTree = "<group>"; };
+		D912EF2313DFA1BE00E671FA /* yajl_encode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = yajl_encode.h; sourceTree = "<group>"; };
+		D912EF2413DFA1BE00E671FA /* yajl_gen.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = yajl_gen.c; sourceTree = "<group>"; };
+		D912EF2513DFA1BE00E671FA /* yajl_gen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = yajl_gen.h; sourceTree = "<group>"; };
+		D912EF2613DFA1BE00E671FA /* yajl_lex.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = yajl_lex.c; sourceTree = "<group>"; };
+		D912EF2713DFA1BE00E671FA /* yajl_lex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = yajl_lex.h; sourceTree = "<group>"; };
+		D912EF2813DFA1BE00E671FA /* yajl_parse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = yajl_parse.h; sourceTree = "<group>"; };
+		D912EF2913DFA1BE00E671FA /* yajl_parser.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = yajl_parser.c; sourceTree = "<group>"; };
+		D912EF2A13DFA1BE00E671FA /* yajl_parser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = yajl_parser.h; sourceTree = "<group>"; };
 		D93F405A1256660000AF842F /* alias.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = alias.h; path = src/alias.h; sourceTree = SOURCE_ROOT; };
 		D93F405B1256660000AF842F /* emonk_main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = emonk_main.c; path = src/emonk_main.c; sourceTree = SOURCE_ROOT; };
 		D93F405C1256660000AF842F /* queue.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = queue.c; path = src/queue.c; sourceTree = SOURCE_ROOT; };
@@ -376,6 +425,19 @@
 		D93F40611256660000AF842F /* util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = util.h; path = src/util.h; sourceTree = SOURCE_ROOT; };
 		D93F40621256660000AF842F /* vm.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = vm.c; path = src/vm.c; sourceTree = SOURCE_ROOT; };
 		D93F40631256660000AF842F /* vm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = vm.h; path = src/vm.h; sourceTree = SOURCE_ROOT; };
+		D9ABA80113DFB5CC00D072BE /* erl_nif_compat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = erl_nif_compat.h; sourceTree = "<group>"; };
+		D9ABA80313DFB5CC00D072BE /* AUTHORS */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AUTHORS; sourceTree = "<group>"; };
+		D9ABA80413DFB5CC00D072BE /* snappy-config.h */ = {isa = PBXFileReference; fileEncoding = 4; path = "snappy-config.h"; sourceTree = "<group>"; };
+		D9ABA80513DFB5CC00D072BE /* COPYING */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = COPYING; sourceTree = "<group>"; };
+		D9ABA80613DFB5CC00D072BE /* snappy-internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "snappy-internal.h"; sourceTree = "<group>"; };
+		D9ABA80713DFB5CC00D072BE /* snappy-sinksource.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "snappy-sinksource.cc"; sourceTree = "<group>"; };
+		D9ABA80813DFB5CC00D072BE /* snappy-sinksource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "snappy-sinksource.h"; sourceTree = "<group>"; };
+		D9ABA80913DFB5CC00D072BE /* snappy-stubs-internal.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "snappy-stubs-internal.cc"; sourceTree = "<group>"; };
+		D9ABA80A13DFB5CC00D072BE /* snappy-stubs-internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "snappy-stubs-internal.h"; sourceTree = "<group>"; };
+		D9ABA80B13DFB5CC00D072BE /* snappy-stubs-public.h */ = {isa = PBXFileReference; fileEncoding = 4; path = "snappy-stubs-public.h"; sourceTree = "<group>"; };
+		D9ABA80C13DFB5CC00D072BE /* snappy.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = snappy.cc; sourceTree = "<group>"; };
+		D9ABA80D13DFB5CC00D072BE /* snappy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = snappy.h; sourceTree = "<group>"; };
+		D9ABA80E13DFB5CC00D072BE /* snappy_nif.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = snappy_nif.cc; sourceTree = "<group>"; };
 		D9B75C7B124C1D1500497E76 /* javascript-trace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "javascript-trace.h"; sourceTree = "<group>"; };
 		D9B75C7C124C1D1500497E76 /* js-config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "js-config.h"; sourceTree = "<group>"; };
 		D9B75C7D124C1D1500497E76 /* jsapi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = jsapi.h; sourceTree = "<group>"; };
@@ -761,6 +823,8 @@
 		0867D691FE84028FC02AAC07 /* iErl14 */ = {
 			isa = PBXGroup;
 			children = (
+				D9ABA80013DFB5CC00D072BE /* snappy */,
+				D912EF1513DFA1BE00E671FA /* ejson */,
 				D9B75C46124C1B5200497E76 /* emonk */,
 				D9E24C131240288C00AC152E /* Headers */,
 				08FB77AEFE84172EC02AAC07 /* Classes */,
@@ -823,6 +887,71 @@
 				AA747D9E0F9514B9006C5449 /* iErl14_Prefix.pch */,
 			);
 			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		D912EF1513DFA1BE00E671FA /* ejson */ = {
+			isa = PBXGroup;
+			children = (
+				D912EF1613DFA1BE00E671FA /* decode.c */,
+				D912EF1713DFA1BE00E671FA /* ejson.c */,
+				D912EF1813DFA1BE00E671FA /* encode.c */,
+				D912EF1913DFA1BE00E671FA /* erl_nif_compat.h */,
+				D912EF1A13DFA1BE00E671FA /* yajl */,
+			);
+			name = ejson;
+			path = src/ejson;
+			sourceTree = "<group>";
+		};
+		D912EF1A13DFA1BE00E671FA /* yajl */ = {
+			isa = PBXGroup;
+			children = (
+				D912EF1B13DFA1BE00E671FA /* yajl.c */,
+				D912EF1C13DFA1BE00E671FA /* yajl_alloc.c */,
+				D912EF1D13DFA1BE00E671FA /* yajl_alloc.h */,
+				D912EF1E13DFA1BE00E671FA /* yajl_buf.c */,
+				D912EF1F13DFA1BE00E671FA /* yajl_buf.h */,
+				D912EF2013DFA1BE00E671FA /* yajl_bytestack.h */,
+				D912EF2113DFA1BE00E671FA /* yajl_common.h */,
+				D912EF2213DFA1BE00E671FA /* yajl_encode.c */,
+				D912EF2313DFA1BE00E671FA /* yajl_encode.h */,
+				D912EF2413DFA1BE00E671FA /* yajl_gen.c */,
+				D912EF2513DFA1BE00E671FA /* yajl_gen.h */,
+				D912EF2613DFA1BE00E671FA /* yajl_lex.c */,
+				D912EF2713DFA1BE00E671FA /* yajl_lex.h */,
+				D912EF2813DFA1BE00E671FA /* yajl_parse.h */,
+				D912EF2913DFA1BE00E671FA /* yajl_parser.c */,
+				D912EF2A13DFA1BE00E671FA /* yajl_parser.h */,
+			);
+			path = yajl;
+			sourceTree = "<group>";
+		};
+		D9ABA80013DFB5CC00D072BE /* snappy */ = {
+			isa = PBXGroup;
+			children = (
+				D9ABA80113DFB5CC00D072BE /* erl_nif_compat.h */,
+				D9ABA80213DFB5CC00D072BE /* google-snappy */,
+				D9ABA80E13DFB5CC00D072BE /* snappy_nif.cc */,
+			);
+			name = snappy;
+			path = src/snappy;
+			sourceTree = "<group>";
+		};
+		D9ABA80213DFB5CC00D072BE /* google-snappy */ = {
+			isa = PBXGroup;
+			children = (
+				D9ABA80313DFB5CC00D072BE /* AUTHORS */,
+				D9ABA80413DFB5CC00D072BE /* snappy-config.h */,
+				D9ABA80513DFB5CC00D072BE /* COPYING */,
+				D9ABA80613DFB5CC00D072BE /* snappy-internal.h */,
+				D9ABA80713DFB5CC00D072BE /* snappy-sinksource.cc */,
+				D9ABA80813DFB5CC00D072BE /* snappy-sinksource.h */,
+				D9ABA80913DFB5CC00D072BE /* snappy-stubs-internal.cc */,
+				D9ABA80A13DFB5CC00D072BE /* snappy-stubs-internal.h */,
+				D9ABA80B13DFB5CC00D072BE /* snappy-stubs-public.h */,
+				D9ABA80C13DFB5CC00D072BE /* snappy.cc */,
+				D9ABA80D13DFB5CC00D072BE /* snappy.h */,
+			);
+			path = "google-snappy";
 			sourceTree = "<group>";
 		};
 		D9B75C46124C1B5200497E76 /* emonk */ = {
@@ -1543,6 +1672,21 @@
 				27167D3213C4E1BF001CC5B6 /* queue.h in Headers */,
 				27167D3313C4E1BF001CC5B6 /* util.h in Headers */,
 				27167D3413C4E1BF001CC5B6 /* vm.h in Headers */,
+				D912EF2E13DFA1BE00E671FA /* erl_nif_compat.h in Headers */,
+				D912EF3113DFA1BE00E671FA /* yajl_alloc.h in Headers */,
+				D912EF3313DFA1BE00E671FA /* yajl_buf.h in Headers */,
+				D912EF3413DFA1BE00E671FA /* yajl_bytestack.h in Headers */,
+				D912EF3513DFA1BE00E671FA /* yajl_common.h in Headers */,
+				D912EF3713DFA1BE00E671FA /* yajl_encode.h in Headers */,
+				D912EF3913DFA1BE00E671FA /* yajl_gen.h in Headers */,
+				D912EF3B13DFA1BE00E671FA /* yajl_lex.h in Headers */,
+				D912EF3C13DFA1BE00E671FA /* yajl_parse.h in Headers */,
+				D912EF3E13DFA1BE00E671FA /* yajl_parser.h in Headers */,
+				D9ABA80F13DFB5CC00D072BE /* erl_nif_compat.h in Headers */,
+				D9ABA81013DFB5CC00D072BE /* snappy-internal.h in Headers */,
+				D9ABA81213DFB5CC00D072BE /* snappy-sinksource.h in Headers */,
+				D9ABA81413DFB5CC00D072BE /* snappy-stubs-internal.h in Headers */,
+				D9ABA81613DFB5CC00D072BE /* snappy.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1766,6 +1910,20 @@
 				27167DCA13C4E1BF001CC5B6 /* to_js.c in Sources */,
 				27167DCB13C4E1BF001CC5B6 /* util.c in Sources */,
 				27167DCC13C4E1BF001CC5B6 /* vm.c in Sources */,
+				D912EF2B13DFA1BE00E671FA /* decode.c in Sources */,
+				D912EF2C13DFA1BE00E671FA /* ejson.c in Sources */,
+				D912EF2D13DFA1BE00E671FA /* encode.c in Sources */,
+				D912EF2F13DFA1BE00E671FA /* yajl.c in Sources */,
+				D912EF3013DFA1BE00E671FA /* yajl_alloc.c in Sources */,
+				D912EF3213DFA1BE00E671FA /* yajl_buf.c in Sources */,
+				D912EF3613DFA1BE00E671FA /* yajl_encode.c in Sources */,
+				D912EF3813DFA1BE00E671FA /* yajl_gen.c in Sources */,
+				D912EF3A13DFA1BE00E671FA /* yajl_lex.c in Sources */,
+				D912EF3D13DFA1BE00E671FA /* yajl_parser.c in Sources */,
+				D9ABA81113DFB5CC00D072BE /* snappy-sinksource.cc in Sources */,
+				D9ABA81313DFB5CC00D072BE /* snappy-stubs-internal.cc in Sources */,
+				D9ABA81513DFB5CC00D072BE /* snappy.cc in Sources */,
+				D9ABA81713DFB5CC00D072BE /* snappy_nif.cc in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1775,6 +1933,7 @@
 		1DEB922308733DC00010E9CD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -1801,6 +1960,7 @@
 		1DEB922408733DC00010E9CD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"HAVE_CONFIG_H=1",
@@ -1826,6 +1986,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"ARCHS[sdk=iphoneos*]" = (
+					armv6,
+					armv7,
+				);
 				COPY_PHASE_STRIP = NO;
 				DSTROOT = /tmp/iErl14.dst;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -1848,6 +2013,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"ARCHS[sdk=iphoneos*]" = (
+					armv6,
+					armv7,
+				);
 				DSTROOT = /tmp/iErl14.dst;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
