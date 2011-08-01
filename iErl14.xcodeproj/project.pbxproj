@@ -358,7 +358,6 @@
 		27167DCC13C4E1BF001CC5B6 /* vm.c in Sources */ = {isa = PBXBuildFile; fileRef = D93F40621256660000AF842F /* vm.c */; };
 		27167DCE13C4E1BF001CC5B6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
 		27167DCF13C4E1BF001CC5B6 /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D9E24C5B124031A700AC152E /* libicucore.dylib */; };
-		27167DD013C4E1BF001CC5B6 /* libcrypto-iphonesimulator.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 03E839091353952500D64D0D /* libcrypto-iphonesimulator.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -725,7 +724,6 @@
 			files = (
 				27167DCE13C4E1BF001CC5B6 /* Foundation.framework in Frameworks */,
 				27167DCF13C4E1BF001CC5B6 /* libicucore.dylib in Frameworks */,
-				27167DD013C4E1BF001CC5B6 /* libcrypto-iphonesimulator.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1786,6 +1784,7 @@
 					"NO_RECURSE=1",
 					"USE_THREADS=1",
 				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
 				GCC_THUMB_SUPPORT = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
@@ -1810,6 +1809,7 @@
 					"NO_RECURSE=1",
 					"USE_THREADS=1",
 				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = (
@@ -1830,9 +1830,10 @@
 				DSTROOT = /tmp/iErl14.dst;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_OPTIMIZATION_LEVEL = s;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = iErl14_Prefix.pch;
+				GCC_VERSION = 4.2;
 				INSTALL_PATH = /usr/local/lib;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1852,6 +1853,7 @@
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = iErl14_Prefix.pch;
+				GCC_VERSION = 4.2;
 				INSTALL_PATH = /usr/local/lib;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
